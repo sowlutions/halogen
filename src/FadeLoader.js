@@ -1,6 +1,7 @@
 var React = require('react');
 var assign = require('domkit/appendVendorPrefix');
 var insertKeyframesRule = require('domkit/insertKeyframesRule');
+var PropTypes = require('prop-types');
 
 /**
  * @type {Object}
@@ -24,12 +25,12 @@ var Loader = React.createClass({
      * @type {Object}
      */
     propTypes: {
-        loading: React.PropTypes.bool,
-        color: React.PropTypes.string,
-        height: React.PropTypes.string,
-        width: React.PropTypes.string,
-        margin: React.PropTypes.string,
-        radius: React.PropTypes.string
+        loading: PropTypes.bool,
+        color: PropTypes.string,
+        height: PropTypes.string,
+        width: PropTypes.string,
+        margin: PropTypes.string,
+        radius: PropTypes.string
     },
 
     /**
